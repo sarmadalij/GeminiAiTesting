@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Gradient -->
+<!--    <item>-->
+<!--        <shape>-->
+<!--            <gradient-->
+<!--                android:startColor="#D9FAF7"-->
+<!--                android:endColor="#DCCCCDCE"-->
+<!--                android:angle="90"/>-->
+<!--        </shape>-->
+<!--    </item>-->
+
+    <!-- Border with Rounded Corners -->
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="#DCCCCDCE" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chat with Gemini Ai"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:padding="3dp"
+                android:gravity="center"
+                tools:ignore="HardcodedText"></TextView>
+
+            <EditText
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/custom_bg"
+                android:gravity="top|start"
+                android:hint="Your Query..."
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:padding="13dp"
+                android:textColor="@color/black"
+                tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+                ></EditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#E221AF09"
+                android:text="Get Answer"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize"></androidx.appcompat.widget.AppCompatButton>
+
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_bg"
+                android:gravity="top|start"
+                android:hint="Gemini Ai..."
+                android:padding="5dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,TextContrastCheck"></TextView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
